@@ -1,5 +1,5 @@
 apt update
-apt install scilab -y
+apt install -y scilab
 
 pip install --upgrade pip
 pip install jupyterlab scilab_kernel
