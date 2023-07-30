@@ -2,7 +2,12 @@
 	"name": "Scilab-Jupyter",
 	"image": "python:3.11.4-bullseye",
 	"features": {
-		"ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {}
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": true,
+			"configureZshAsDefaultShell": true,
+			"installOhMyZsh": true,
+			"upgradePackages": true
+		}
 	},
 	"postCreateCommand": "sh ./.devcontainer/postCreateCommand.sh",
 	"customizations": {
@@ -13,7 +18,6 @@
 				"mammothb.scilab"
 			],
 			"settings": {
-				"terminal.integrated.shell": "/bin/zsh"
 			}
 		}
 	}
